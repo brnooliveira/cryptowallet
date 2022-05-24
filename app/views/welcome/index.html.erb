@@ -1,0 +1,26 @@
+<p>
+    <%= link_to 'Idioma Portugues', '/?locale=pt-BR'%>
+</p>
+
+<p>
+    <%= link_to 'Idioma Ingles', '/?locale=en'%>
+</p>
+
+
+<h1>Seja Bem Vindo!</h1>
+
+<p><%= nome_aplicacao  %></p>
+
+<p>O idioma da aplicacao é: <%= locale(I18n.locale)  %></p>
+
+
+ 
+<p><strong> Data: </strong><%= l(Date.today)%></p>
+
+<p>Voce Esta em ambiente de:<strong><%= ambiente_desenvolviemnto%></strong> </p>
+
+<p>
+    O nome do query params e: <%=@meu_nome%>
+</p>
+
+<%= render "menu"%>
